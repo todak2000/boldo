@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: var(--manrope-font), sans-serif;
+}
+
+.font-open-sans {
+  font-family: var(--open-sans-font), sans-serif;
+}
+
+.bg-top {
+  background-image: url("../../public/boldo/side-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: font-manrope, sans-serif;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
