@@ -21,7 +21,7 @@ const Products = () => {
               priority
             />
             <div className="w-full">
-              <p className="text-[25px] md:text-[36px] font-normal font-manrope text-black leading-[40px] md:leading-[56px]">
+              <p className="font-normal font-manrope text-black text-p-bold">
                 {i.mainText}
               </p>
               <ul
@@ -30,6 +30,7 @@ const Products = () => {
                 {i.options.map((x, index) => {
                   return (
                     <li
+                    key={index}
                       className={`flex flex-row items-center gap-[12px] md:gap-[27px] ${!i.isBullet && index ===0 ? 'text-white bg-primary':'text-black'} font-openSans  ${
                         i.isBullet
                           ? "text-[16px] md:text-[20px] font-normal leading-[24px] md:leading-[32px] mb-[10px] md:mb-[24px]"

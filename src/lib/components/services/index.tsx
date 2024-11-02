@@ -10,14 +10,14 @@ const Services = () => {
       <p className=" text-[20px] text-center mb-[12px] font-normal font-openSans leading-[32px] text-[#F1F1F1]">
         {servicesItems.titleText}
       </p>
-      <p className="lg:max-w-[900px] text-[35px] lg:text-[48px] text-center font-normal font-manrope leading-[56px] md:leading-[72px] mb-[70px] text-white">
+      <p className="lg:max-w-[900px] text-center font-normal text-header mb-[70px] text-white">
         {servicesItems.mainText}
       </p>
 
       <div className="flex flex-col md:flex-row w-full items-center justify-center gap-[30px] lg:gap-[100px]">
         {services.map((i) => {
           return (
-            <div className="w-[300px] lg:h-[490px]">
+            <div className="w-[300px] lg:h-[490px]" key={i.text}>
               <Image
                 src={i.image}
                 alt={i.text}

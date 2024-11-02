@@ -9,7 +9,7 @@ const Hero = () => {
       {/* top section */}
       <div className="flex w-full flex-col lg:flex-row items-center justify-between bg-transparent gap-[70px] md:gap-[105px]">
         <div className="w-full">
-          <p className="mb-[16px] text-[#000000] font-normal font-manrope leading-[56px] md:leading-[72px] text-[35px] md:text-[48px] text-center lg:text-left">
+          <p className="mb-[16px] text-[#000000] font-normal text-header text-center lg:text-left">
             {heroItems.mainText}
           </p>
           <p className="text-[#777777] font-normal font-openSans leading-[28px] text-[16px] text-center lg:text-left">

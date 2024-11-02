@@ -10,11 +10,14 @@ html {
   font-family: var(--open-sans-font), sans-serif;
 }
 
-.bg-top {
-  background-image: url("../../public/boldo/side-bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
+.text-header {
+  @apply text-[2.19rem] lg:text-[3rem] font-manrope leading-[56px] md:leading-[72px];
+}
+.text-p {
+  @apply text-[1.25rem] lg:text-[1.5rem] font-openSans leading-[36px];
+}
+.text-p-bold {
+  @apply text-[25px] md:text-[36px]  leading-[40px] md:leading-[56px];
 }
 body {
   color: var(--foreground);
@@ -40,4 +43,11 @@ body {
 .marquee-content {
   display: inline-flex;
   animation: marquee 20s linear infinite;
+}
+.bg-contact {
+  background-image: url("../../public/boldo/bg-contact.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
